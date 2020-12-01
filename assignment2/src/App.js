@@ -42,7 +42,7 @@ class App extends React.Component {
                     onChange={this.lenChangeHandler}
                     value={this.state.text}
                 />
-
+                <p>{this.state.text}</p>
                 <Validation len={this.state.textLen} />
 
                 {this.state.text.split("").map((c, index) => (
