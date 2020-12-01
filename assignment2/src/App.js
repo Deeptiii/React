@@ -23,7 +23,8 @@ class App extends React.Component {
         const textArr = text.split("");
         textArr.splice(charIndex, 1);
         this.setState({
-            text: textArr.join("")
+            text: textArr.join(""),
+            textLen: textArr.length
         });
     };
 
